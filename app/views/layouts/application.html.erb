@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tu Portafolio</title>
+  
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="general">
+	<div id="header">
+		<h1>Tu Portafolio Personal</h1>
+
+		<div id="barraLateral">	
+
+	<ul>
+
+		<li>
+			<%= image_tag("facebook.png",:height => "20%",:width => "20%")%> Facebook
+		</li>
+		<li>
+			<%= image_tag("twitter.png",:height => "20%",:width => "20%")%> Twitter
+		</li>
+
+		
+	</ul>
+	
+	
+
+</div>	
+		<ul>
+		
+		<%= link_to "Inicio |", index_path %>	
+		<%= link_to "Acerca de Mí |", nosotros_path %>
+		<%= link_to "Formación Académica |", anuncios_path %>
+		<%= link_to "Muestras |", categorias_path %>
+		<%= link_to "Contacto", contacto_path %>
+
+		</ul>
+		
+		
+		
+	</div>
+	
+	
+	
+	
+	
+	
+</div>	
+
+
+
+
+
+<%= yield %>
+
+</body>
+</html>

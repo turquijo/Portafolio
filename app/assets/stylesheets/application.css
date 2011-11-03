@@ -1,0 +1,68 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+a{
+	
+	text-decoration:none;
+	color:#FF8000;
+	
+}
+
+
+
+.links{
+
+text-decoration:none;
+}
+
+
+
+
+.noticias{
+width:120px;
+height:300px;
+float:left;
+margin:20px;
+color:#FFFFFF;
+
+}
+
+.imagenNoticia{
+
+width:120px;
+height: 120px;
+margin-top:3px;
+margin-bottom:3px;
+background-image:url('img.jpg');
+
+
+}
+.englobador{
+
+width:960px;
+height:500px;
+margin:0 auto;
+
+
+}
+#barraLateral ul li{
+
+font-size:16px;
+text-decoration:none;
+list-style:none;
+color: #FFFFFF;
+}
+
+#barrita{
+	
+	width:960px;
+	height:4px;
+	background-color:#FF8000;
+	
+}
+

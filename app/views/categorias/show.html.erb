@@ -1,0 +1,27 @@
+<div class="englobador">
+
+<div class="cuerpo">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Categoría:</b>
+  <%= @categoria.nombre %>
+</p>
+    </br>
+
+
+<% for anuncio in @categoria.anuncios %>
+    <%= link_to anuncio.titulo, anuncio %>
+    <%= anuncio.contenido %>
+
+    </br>    </br>
+
+<% end %>
+
+    </br>
+    </br>
+
+<%= link_to 'Atras', categorias_path %>
+</div>
+</div>

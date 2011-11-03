@@ -1,0 +1,47 @@
+<div class="englobador">
+	<div id="barrita">
+	</div>
+<div class="cuerpo">
+<h1>Muestras de Proyectos</h1>
+
+<table>
+  <tr>
+  <br/>
+
+    <th>Categoría:</th>
+    <br/>
+
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categorias.each do |categoria| %>
+  <tr>
+    <td><%= categoria.nombre %></td>
+    <td><%= link_to 'Ver más |', categoria %></td>
+    <td><%= link_to 'Editar |', edit_categoria_path(categoria) %></td>
+    <td><%= link_to 'Eliminar', categoria, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Nueva Categoría de Proyectos', new_categoria_path %>
+</div>
+</div>
+
+<br />
+<br />
+<br />
+
+<div class="englobador">
+	
+	<div id="barrita">
+	</div>
+	
+<div id="footer">
+<%= render "/compartido/ultimas_noticias"%>
+</div>
+</div>

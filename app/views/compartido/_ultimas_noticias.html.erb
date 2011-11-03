@@ -1,0 +1,25 @@
+
+		
+		<% @noticias = Anuncio.find(:all,:order => "titulo asc", :limit => 6)%>
+		<% @noticias.each do |noticia| %>
+
+		
+<div class="noticias">
+	
+	    
+	
+	
+	<div class="titulon"><%= link_to noticia.titulo, noticia %> <br /></div>
+	<div class="imagenNoticia"></div>
+	<%= noticia.contenido.truncate(80, :omission => "...  (leer más)") %> 
+	<br/>
+	<div class="fecha"><%= noticia.created_at.strftime("%Y-%b-%e") %></div>
+	Relacionado con: <br/> <i><%= link_to noticia.categoria.nombre, noticia.categoria %></i>
+
+	
+	
+	
+	
+</div>
+	   
+<%end%>

@@ -1,0 +1,21 @@
+<div class="englobador">
+
+<div class="cuerpo">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @anuncio.titulo %>
+</p>
+
+<p>
+  <b>Contenido:</b>
+  <%= @anuncio.contenido %>
+</p>
+
+
+<%= link_to 'Editar |', edit_anuncio_path(@anuncio) %>
+<%= link_to 'Atras', anuncios_path %>
+</div>
+</div">

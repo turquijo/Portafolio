@@ -1,0 +1,71 @@
+<div class="englobador">
+	<div id="barrita">
+	</div>
+<div class="cuerpo">
+
+<h1>Formación Académica</h1>
+
+Cursé la carrera de Diseño Digital en la universidad Iberoamericana León. </br>
+Cursé una diplomado en Php y MySql con Dreamweaver. </br>
+Cursé una diplomado en Flash Actionscript2, Flash Advanced Design, y Flash Actionscript3 de Adobe. </br>
+Cursé el diplomado "De lo Análogo, a lo Digital", en la Universidad Iberoamericana León. </br>
+Cursé las materias "Metodología de la Programación" y  "Paradigmas de Programación" en línea, de la Universidad de Stanford.  </br>
+
+<br />
+<br />
+<br />
+
+<h1>Habilidades</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Descripción</th>
+
+  </tr>
+
+<% @anuncios.each do |anuncio| %>
+  <tr>
+    <td><%= anuncio.titulo %></td>
+
+    <td><%= anuncio.contenido %></td>
+
+    <td><%= link_to 'Ver Más |', anuncio %></td>
+    <td><%= link_to 'Eliminar', anuncio, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<br />
+<br />
+
+<%= link_to 'Nueva Habilidad', new_anuncio_path %>
+</div>
+
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<div class="englobador">
+	
+	<div id="barrita">
+	</div>
+	
+<div id="footer">
+<%= render "/compartido/ultimas_noticias"%>
+</div>
+</div>
+
